@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+.display{
+    height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+  .text1{
+      position: relative;
+      padding-top: 570px;
+      right: 316px;
+      color: #00CED1;
+  }
+  
+  .btn-2{
+      position: relative;
+      top: 350px;
+      right: 450px;
+      bottom: 20px;
+      background-color: #0076CE;
+    color: white;
+    font-size: large;
+    border: white;
+    padding: 15px 32px;
+  }

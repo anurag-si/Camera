@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    position: relative;
+    background-color: #00BFFF;
+    padding: 10px;
+    color: white;
+   
+}
+
+
+
+.text{
+    position: relative;
+    text-align: center;
+    padding-right: 40px;
+}
+

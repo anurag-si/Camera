@@ -1,0 +1,25 @@
+.webcam{
+    height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+
+.button{
+    position: relative;
+    bottom: -300px;
+    right: 300px;
+    background-color: #0076CE;
+    color: white;
+    font-size: large;
+    border: white;
+    padding: 15px 32px;
+    margin: 20px;
+}

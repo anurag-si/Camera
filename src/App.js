@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Header from "./Components/Header/Header";
+import Display from "./Display/Display";
+import Stream from "./Stream/Stream";
+import './App.css'
 
 function App() {
+  const [img, setImg] = useState(null)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header />
+      <Routes>
+          <Route path="/" element={<Stream
+          img={img}
+          setImg={setImg}
+          />
+        } />
+          <Route path="/display" element={<Display
+          img={img}
+          setImg={setImg}
+            />} />
+      </Routes>
+    
+    </BrowserRouter>
     </div>
   );
 }
